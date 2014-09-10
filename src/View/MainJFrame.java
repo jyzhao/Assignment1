@@ -6,7 +6,7 @@
 
 package View;
 
-import Model.Product;
+import Model.Person;
 
 /**
  *
@@ -18,12 +18,12 @@ public class MainJFrame extends javax.swing.JFrame {
      * Creates new form MainJFrame
      */
     
-    private Product product;
+    private Person person;
     
     
     public MainJFrame() {
         initComponents();
-        product = new Product();
+        person = new Person();
         
     }
 
@@ -38,29 +38,25 @@ public class MainJFrame extends javax.swing.JFrame {
 
         jSplitPane1 = new javax.swing.JSplitPane();
         menuJPanel = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        createProductJButton = new javax.swing.JButton();
-        viewProductJButton = new javax.swing.JButton();
-        viewJPanel = new javax.swing.JPanel();
+        personJButton = new javax.swing.JButton();
+        addressJButton = new javax.swing.JButton();
+        addressJPanel = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jSplitPane1.setDividerLocation(200);
 
-        jLabel1.setFont(new java.awt.Font("Lucida Grande", 1, 16)); // NOI18N
-        jLabel1.setText("Menu Screen");
-
-        createProductJButton.setText("Create Product");
-        createProductJButton.addActionListener(new java.awt.event.ActionListener() {
+        personJButton.setText("Person");
+        personJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                createProductJButtonActionPerformed(evt);
+                personJButtonActionPerformed(evt);
             }
         });
 
-        viewProductJButton.setText("View Product");
-        viewProductJButton.addActionListener(new java.awt.event.ActionListener() {
+        addressJButton.setText("Address");
+        addressJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                viewProductJButtonActionPerformed(evt);
+                addressJButtonActionPerformed(evt);
             }
         });
 
@@ -71,26 +67,24 @@ public class MainJFrame extends javax.swing.JFrame {
             .addGroup(menuJPanelLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(menuJPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(createProductJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(viewProductJButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(personJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(addressJButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(67, Short.MAX_VALUE))
         );
         menuJPanelLayout.setVerticalGroup(
             menuJPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(menuJPanelLayout.createSequentialGroup()
-                .addComponent(jLabel1)
-                .addGap(82, 82, 82)
-                .addComponent(createProductJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(102, 102, 102)
+                .addComponent(personJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 99, Short.MAX_VALUE)
-                .addComponent(viewProductJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(addressJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(86, 86, 86))
         );
 
         jSplitPane1.setLeftComponent(menuJPanel);
 
-        viewJPanel.setLayout(new java.awt.BorderLayout());
-        jSplitPane1.setRightComponent(viewJPanel);
+        addressJPanel.setLayout(new java.awt.BorderLayout());
+        jSplitPane1.setRightComponent(addressJPanel);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -112,19 +106,19 @@ public class MainJFrame extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void createProductJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_createProductJButtonActionPerformed
+    private void personJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_personJButtonActionPerformed
         // TODO add your handling code here:
-        CreateJPanel createJPanel = new CreateJPanel(product);
-        jSplitPane1.setRightComponent(createJPanel);
+        PersonJPanel personJPanel = new PersonJPanel(person);
+        jSplitPane1.setRightComponent(personJPanel);
         
-    }//GEN-LAST:event_createProductJButtonActionPerformed
+    }//GEN-LAST:event_personJButtonActionPerformed
 
-    private void viewProductJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_viewProductJButtonActionPerformed
+    private void addressJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addressJButtonActionPerformed
         // TODO add your handling code here:
-        ViewJPanel viewJPanel = new ViewJPanel(product);
-        jSplitPane1.setRightComponent(viewJPanel);
+        AddressJPanel addressJPanel = new AddressJPanel(person);
+        jSplitPane1.setRightComponent(addressJPanel);
         
-    }//GEN-LAST:event_viewProductJButtonActionPerformed
+    }//GEN-LAST:event_addressJButtonActionPerformed
 
     /**
      * @param args the command line arguments
@@ -162,11 +156,10 @@ public class MainJFrame extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton createProductJButton;
-    private javax.swing.JLabel jLabel1;
+    private javax.swing.JButton addressJButton;
+    private javax.swing.JPanel addressJPanel;
     private javax.swing.JSplitPane jSplitPane1;
     private javax.swing.JPanel menuJPanel;
-    private javax.swing.JPanel viewJPanel;
-    private javax.swing.JButton viewProductJButton;
+    private javax.swing.JButton personJButton;
     // End of variables declaration//GEN-END:variables
 }

@@ -10,7 +10,7 @@ package Model;
  *
  * @author zhaojiyuan
  */
-public class Product {
+public class Person {
     private String firstName;
     private String lastName;
     private String dateOfBirth;
@@ -94,8 +94,4 @@ public class Product {
         this.addressZipCode = addressZipCode;
     }
     
-    @Override
-    public String toString() {
-        return productName;
-    }
 }

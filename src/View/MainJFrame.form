@@ -61,55 +61,45 @@
                   <Group type="102" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="createProductJButton" alignment="0" min="-2" pref="125" max="-2" attributes="0"/>
-                          <Component id="viewProductJButton" alignment="0" max="32767" attributes="0"/>
-                          <Component id="jLabel1" alignment="1" min="-2" pref="117" max="-2" attributes="0"/>
+                          <Component id="personJButton" alignment="0" min="-2" pref="125" max="-2" attributes="0"/>
+                          <Component id="addressJButton" alignment="0" max="32767" attributes="0"/>
                       </Group>
-                      <EmptySpace max="32767" attributes="0"/>
+                      <EmptySpace pref="67" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
-                      <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="82" max="-2" attributes="0"/>
-                      <Component id="createProductJButton" min="-2" pref="98" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="102" max="-2" attributes="0"/>
+                      <Component id="personJButton" min="-2" pref="98" max="-2" attributes="0"/>
                       <EmptySpace pref="99" max="32767" attributes="0"/>
-                      <Component id="viewProductJButton" min="-2" pref="106" max="-2" attributes="0"/>
+                      <Component id="addressJButton" min="-2" pref="106" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="86" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
           </Layout>
           <SubComponents>
-            <Component class="javax.swing.JLabel" name="jLabel1">
+            <Component class="javax.swing.JButton" name="personJButton">
               <Properties>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Lucida Grande" size="16" style="1"/>
-                </Property>
-                <Property name="text" type="java.lang.String" value="Menu Screen"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JButton" name="createProductJButton">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Create Product"/>
+                <Property name="text" type="java.lang.String" value="Person"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="createProductJButtonActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="personJButtonActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JButton" name="viewProductJButton">
+            <Component class="javax.swing.JButton" name="addressJButton">
               <Properties>
-                <Property name="text" type="java.lang.String" value="View Product"/>
+                <Property name="text" type="java.lang.String" value="Address"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="viewProductJButtonActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="addressJButtonActionPerformed"/>
               </Events>
             </Component>
           </SubComponents>
         </Container>
-        <Container class="javax.swing.JPanel" name="viewJPanel">
+        <Container class="javax.swing.JPanel" name="addressJPanel">
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JSplitPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JSplitPaneSupportLayout$JSplitPaneConstraintsDescription">
               <JSplitPaneConstraints position="right"/>

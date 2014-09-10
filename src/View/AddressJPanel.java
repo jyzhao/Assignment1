@@ -6,26 +6,26 @@
 
 package View;
 
-import Model.Product;
+import Model.Person;
 
 /**
  *
  * @author zhaojiyuan
  */
-public class ViewJPanel extends javax.swing.JPanel {
+public class AddressJPanel extends javax.swing.JPanel {
 
     /**
      * Creates new form ViewJPanel
      */
-    private Product product;
+    private Person person;
     
-    public ViewJPanel(Product product) {
+    public AddressJPanel(Person person) {
         initComponents();
-        viewProductDetails(product);
+        addressDetails(person);
         
     }
     
-    public void viewProductDetails(Product product){
+    public void addressDetails(Person person){
         productAvailabilityJTextField.setText(String.valueOf(product.getProductAvailability()));
         productNameJTextField.setText(product.getProductName());
         productPriceJTextField.setText(product.getProductPrice());

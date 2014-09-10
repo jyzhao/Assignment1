@@ -6,23 +6,23 @@
 
 package View;
 
-import Model.Product;
+import Model.Person;
 import javax.swing.JOptionPane;
 
 /**
  *
  * @author zhaojiyuan
  */
-public class CreateJPanel extends javax.swing.JPanel {
+public class PersonJPanel extends javax.swing.JPanel {
 
     /**
      * Creates new form CreatePanel
      */
-    private Product product;
+    private Person person;
     
-    public CreateJPanel(Product product) {
+    public PersonJPanel(Person person) {
         initComponents();
-        this.product = product;
+        this.person = person;
     }
 
     /**
