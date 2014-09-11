@@ -40,6 +40,7 @@ public class MainJFrame extends javax.swing.JFrame {
         menuJPanel = new javax.swing.JPanel();
         personJButton = new javax.swing.JButton();
         addressJButton = new javax.swing.JButton();
+        displayJButton = new javax.swing.JButton();
         addressJPanel = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -60,26 +61,41 @@ public class MainJFrame extends javax.swing.JFrame {
             }
         });
 
+        displayJButton.setText("Display");
+        displayJButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                displayJButtonActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout menuJPanelLayout = new javax.swing.GroupLayout(menuJPanel);
         menuJPanel.setLayout(menuJPanelLayout);
         menuJPanelLayout.setHorizontalGroup(
             menuJPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(menuJPanelLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(menuJPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                .addGroup(menuJPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(personJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(addressJButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(67, Short.MAX_VALUE))
+                    .addComponent(addressJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(displayJButton))
+                .addContainerGap(482, Short.MAX_VALUE))
         );
+
+        menuJPanelLayout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {addressJButton, displayJButton, personJButton});
+
         menuJPanelLayout.setVerticalGroup(
             menuJPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(menuJPanelLayout.createSequentialGroup()
-                .addGap(102, 102, 102)
+                .addGap(35, 35, 35)
                 .addComponent(personJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 99, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 45, Short.MAX_VALUE)
                 .addComponent(addressJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(86, 86, 86))
+                .addGap(44, 44, 44)
+                .addComponent(displayJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(49, 49, 49))
         );
+
+        menuJPanelLayout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {addressJButton, displayJButton, personJButton});
 
         jSplitPane1.setLeftComponent(menuJPanel);
 
@@ -120,6 +136,12 @@ public class MainJFrame extends javax.swing.JFrame {
         
     }//GEN-LAST:event_addressJButtonActionPerformed
 
+    private void displayJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_displayJButtonActionPerformed
+        // TODO add your handling code here:
+        DisplayJPanel displayJPanel = new DisplayJPanel(person);
+        jSplitPane1.setRightComponent(displayJPanel);
+    }//GEN-LAST:event_displayJButtonActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -156,6 +178,7 @@ public class MainJFrame extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton addressJButton;
     private javax.swing.JPanel addressJPanel;
+    private javax.swing.JButton displayJButton;
     private javax.swing.JSplitPane jSplitPane1;
     private javax.swing.JPanel menuJPanel;
     private javax.swing.JButton personJButton;
