@@ -21,15 +21,6 @@ public class AddressJPanel extends javax.swing.JPanel {
     
     public AddressJPanel(Person person) {
         initComponents();
-        addressDetails(person);
-        
-    }
-    
-    public void addressDetails(Person person){
-        productAvailabilityJTextField.setText(String.valueOf(product.getProductAvailability()));
-        productNameJTextField.setText(product.getProductName());
-        productPriceJTextField.setText(product.getProductPrice());
-        productDescriptionJTextArea.setText(product.getProductDescription());
         
     }
 
@@ -42,36 +33,43 @@ public class AddressJPanel extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel4 = new javax.swing.JLabel();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        productDescriptionJTextArea = new javax.swing.JTextArea();
-        productPriceJTextField = new javax.swing.JTextField();
-        productAvailabilityJTextField = new javax.swing.JTextField();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        zipCodeJTextField = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        productNameJTextField = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        streetNameJTextField = new javax.swing.JTextField();
+        townCityJTextField = new javax.swing.JTextField();
+        stateJTextField = new javax.swing.JTextField();
+        countryJTextField = new javax.swing.JTextField();
+        okayJButton = new javax.swing.JButton();
 
-        jLabel4.setText("Product Availability");
+        jLabel5.setText("View Product Screen");
 
-        productDescriptionJTextArea.setColumns(20);
-        productDescriptionJTextArea.setRows(5);
-        jScrollPane1.setViewportView(productDescriptionJTextArea);
+        jLabel6.setText("Zip Code");
 
-        jLabel1.setText("Product Name");
+        jLabel1.setText("Street Name");
 
-        jLabel2.setText("Product Description");
+        jLabel2.setText("Town/City");
 
-        productNameJTextField.addActionListener(new java.awt.event.ActionListener() {
+        jLabel3.setText("State");
+
+        jLabel4.setText("Country");
+
+        townCityJTextField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                productNameJTextFieldActionPerformed(evt);
+                townCityJTextFieldActionPerformed(evt);
             }
         });
 
-        jLabel3.setText("Product Price");
-
-        jLabel5.setText("View Product Screen");
+        okayJButton.setText("Okay");
+        okayJButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                okayJButtonActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -81,74 +79,106 @@ public class AddressJPanel extends javax.swing.JPanel {
                 .addGap(347, 347, 347)
                 .addComponent(jLabel5)
                 .addContainerGap(312, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(okayJButton)
+                .addGap(354, 354, 354))
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(layout.createSequentialGroup()
-                    .addGap(159, 159, 159)
+                    .addGap(291, 291, 291)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addGroup(layout.createSequentialGroup()
-                            .addComponent(jLabel1)
-                            .addGap(197, 197, 197)
-                            .addComponent(productNameJTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addGap(22, 22, 22)
+                            .addComponent(zipCodeJTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(javax.swing.GroupLayout.Alignment.CENTER, layout.createSequentialGroup()
+                            .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 87, Short.MAX_VALUE)
+                            .addGap(6, 6, 6)
+                            .addComponent(streetNameJTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGroup(layout.createSequentialGroup()
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(jLabel3)
-                                .addComponent(jLabel4))
-                            .addGap(170, 170, 170)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(productPriceJTextField, javax.swing.GroupLayout.DEFAULT_SIZE, 132, Short.MAX_VALUE)
-                                .addComponent(productAvailabilityJTextField)))
-                        .addGroup(layout.createSequentialGroup()
-                            .addComponent(jLabel2)
-                            .addGap(98, 98, 98)
-                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addContainerGap(159, Short.MAX_VALUE)))
+                            .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addGap(6, 6, 6)
+                            .addComponent(townCityJTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                            .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addGap(12, 12, 12)
+                            .addComponent(stateJTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                            .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addGap(22, 22, 22)
+                            .addComponent(countryJTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGap(292, 292, 292)))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(41, 41, 41)
                 .addComponent(jLabel5)
-                .addContainerGap(486, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 383, Short.MAX_VALUE)
+                .addComponent(okayJButton)
+                .addGap(74, 74, 74))
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(layout.createSequentialGroup()
-                    .addGap(87, 87, 87)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                        .addGroup(layout.createSequentialGroup()
-                            .addComponent(jLabel1)
-                            .addGap(60, 60, 60)
-                            .addComponent(jLabel2)
-                            .addGap(46, 46, 46))
-                        .addGroup(layout.createSequentialGroup()
-                            .addComponent(productNameJTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(18, 18, 18)
-                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)))
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(jLabel3)
-                        .addComponent(productPriceJTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGap(64, 64, 64)
+                    .addGap(141, 141, 141)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jLabel4)
-                        .addComponent(productAvailabilityJTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addContainerGap(194, Short.MAX_VALUE)))
+                        .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(streetNameJTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGap(26, 26, 26)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(townCityJTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGap(31, 31, 31)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(layout.createSequentialGroup()
+                            .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addGap(9, 9, 9))
+                        .addComponent(stateJTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGap(30, 30, 30)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(countryJTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGap(33, 33, 33)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(zipCodeJTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGap(142, 142, 142)))
         );
     }// </editor-fold>//GEN-END:initComponents
 
-    private void productNameJTextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_productNameJTextFieldActionPerformed
+    private void townCityJTextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_townCityJTextFieldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_productNameJTextFieldActionPerformed
+    }//GEN-LAST:event_townCityJTextFieldActionPerformed
+
+    private void okayJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_okayJButtonActionPerformed
+        // TODO add your handling code here:
+        String addressStreetName = streetNameJTextField.getText();
+        String addressTownCity = townCityJTextField.getText();
+        String addressState = stateJTextField.getText();
+        String addressCountry = countryJTextField.getText();
+        String addressZipCode = zipCodeJTextField.getText();
+        
+        person.setAddressStreetName(addressStreetName);
+        person.setAddressTownCity(addressTownCity);
+        person.setAddressState(addressState);
+        person.setAddressCountry(addressCountry);
+        person.setAddressZipCode(Integer.parseInt(addressZipCode));
+
+        //JOptionPane.showMessageDialog(null, "Product Created Successfully" + product);
+    }//GEN-LAST:event_okayJButtonActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JTextField countryJTextField;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
-    private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTextField productAvailabilityJTextField;
-    private javax.swing.JTextArea productDescriptionJTextArea;
-    private javax.swing.JTextField productNameJTextField;
-    private javax.swing.JTextField productPriceJTextField;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JButton okayJButton;
+    private javax.swing.JTextField stateJTextField;
+    private javax.swing.JTextField streetNameJTextField;
+    private javax.swing.JTextField townCityJTextField;
+    private javax.swing.JTextField zipCodeJTextField;
     // End of variables declaration//GEN-END:variables
 }

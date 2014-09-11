@@ -14,7 +14,7 @@ public class Person {
     private String firstName;
     private String lastName;
     private String dateOfBirth;
-    private String socialSecurityNumber;
+    private int socialSecurityNumber;
     private String addressStreetName;
     private String addressTownCity;
     private String addressState;
@@ -46,11 +46,11 @@ public class Person {
         this.dateOfBirth = dateOfBirth;
     }
 
-    public String getSocialSecurityNumber() {
+    public int getSocialSecurityNumber() {
         return socialSecurityNumber;
     }
 
-    public void setSocialSecurityNumber(String socialSecurityNumber) {
+    public void setSocialSecurityNumber(int socialSecurityNumber) {
         this.socialSecurityNumber = socialSecurityNumber;
     }
 

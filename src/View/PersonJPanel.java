@@ -34,135 +34,124 @@ public class PersonJPanel extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel5 = new javax.swing.JLabel();
+        okayJButton = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
-        productNameJTextField = new javax.swing.JTextField();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        productDescriptionJTextArea = new javax.swing.JTextArea();
-        productPriceJTextField = new javax.swing.JTextField();
-        productAvailabilityJTextField = new javax.swing.JTextField();
-        jLabel5 = new javax.swing.JLabel();
-        createProductJButton = new javax.swing.JButton();
-
-        jLabel1.setText("Product Name");
-
-        jLabel2.setText("Product Description");
-
-        jLabel3.setText("Product Price");
-
-        jLabel4.setText("Product Availability");
-
-        productNameJTextField.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                productNameJTextFieldActionPerformed(evt);
-            }
-        });
-
-        productDescriptionJTextArea.setColumns(20);
-        productDescriptionJTextArea.setRows(5);
-        jScrollPane1.setViewportView(productDescriptionJTextArea);
+        firstNameJTextField = new javax.swing.JTextField();
+        lastNameJTextField = new javax.swing.JTextField();
+        dateOfBirthJTextField = new javax.swing.JTextField();
+        socialSecurityNumberJTextField = new javax.swing.JTextField();
 
         jLabel5.setText("Create Product Screen");
 
-        createProductJButton.setText("Create Product");
-        createProductJButton.addActionListener(new java.awt.event.ActionListener() {
+        okayJButton.setText("Okay");
+        okayJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                createProductJButtonActionPerformed(evt);
+                okayJButtonActionPerformed(evt);
             }
         });
+
+        jLabel1.setText("First Name");
+
+        jLabel2.setText("Last Name");
+
+        jLabel3.setText("Date Of Birth");
+
+        jLabel4.setText("SSN");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(120, 120, 120)
+                .addGap(343, 343, 343)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel1)
-                        .addGap(197, 197, 197)
-                        .addComponent(productNameJTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel3)
-                            .addComponent(jLabel4))
-                        .addGap(170, 170, 170)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(productPriceJTextField, javax.swing.GroupLayout.DEFAULT_SIZE, 132, Short.MAX_VALUE)
-                            .addComponent(productAvailabilityJTextField)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel2)
-                        .addGap(98, 98, 98)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel5)
-                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(createProductJButton))))
-                .addContainerGap(206, Short.MAX_VALUE))
+                    .addComponent(jLabel5)
+                    .addComponent(okayJButton))
+                .addContainerGap(313, Short.MAX_VALUE))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(278, 278, 278)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
+                        .addGroup(layout.createSequentialGroup()
+                            .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addGap(6, 6, 6)
+                            .addComponent(firstNameJTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                            .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addGap(6, 6, 6)
+                            .addComponent(lastNameJTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                            .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, 115, Short.MAX_VALUE)
+                            .addGap(12, 12, 12)
+                            .addComponent(dateOfBirthJTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                            .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addGap(22, 22, 22)
+                            .addComponent(socialSecurityNumberJTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGap(279, 279, 279)))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(116, 116, 116)
-                        .addComponent(jLabel1)
-                        .addGap(60, 60, 60)
-                        .addComponent(jLabel2)
-                        .addGap(46, 46, 46))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(50, 50, 50)
-                        .addComponent(jLabel5)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(productNameJTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)))
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel3)
-                    .addComponent(productPriceJTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(64, 64, 64)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel4)
-                    .addComponent(productAvailabilityJTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(78, 78, 78)
-                .addComponent(createProductJButton)
+                .addGap(50, 50, 50)
+                .addComponent(jLabel5)
+                .addGap(386, 386, 386)
+                .addComponent(okayJButton)
                 .addContainerGap(83, Short.MAX_VALUE))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(151, 151, 151)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(firstNameJTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGap(46, 46, 46)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(lastNameJTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGap(59, 59, 59)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(layout.createSequentialGroup()
+                            .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addGap(9, 9, 9))
+                        .addComponent(dateOfBirthJTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGap(44, 44, 44)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(socialSecurityNumberJTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGap(152, 152, 152)))
         );
     }// </editor-fold>//GEN-END:initComponents
 
-    private void productNameJTextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_productNameJTextFieldActionPerformed
+    private void okayJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_okayJButtonActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_productNameJTextFieldActionPerformed
-
-    private void createProductJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_createProductJButtonActionPerformed
-        // TODO add your handling code here:
-        String productName = productNameJTextField.getText();
-        String productDescription = productDescriptionJTextArea.getText();
-        String productAvailability = productAvailabilityJTextField.getText();
-        String productPrice = productPriceJTextField.getText();
+        String firstName = firstNameJTextField.getText();
+        String lastName = lastNameJTextField.getText();
+        String dateOfBirth = dateOfBirthJTextField.getText();
+        String socialSecurityNumber = socialSecurityNumberJTextField.getText();
         
-        product.setProductAvailability(Integer.parseInt(productAvailability));
-        product.setProductDescription(productDescription);
-        product.setProductPrice(productPrice);
-        product.setProductName(productName);
+        person.setFirstName(firstName);
+        person.setLastName(lastName);
+        person.setDateOfBirth(dateOfBirth);
+        person.setSocialSecurityNumber(Integer.parseInt(socialSecurityNumber));
         
-        JOptionPane.showMessageDialog(null, "Product Created Successfully" + product);
-    }//GEN-LAST:event_createProductJButtonActionPerformed
+        //JOptionPane.showMessageDialog(null, "Product Created Successfully" + product);
+    }//GEN-LAST:event_okayJButtonActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton createProductJButton;
+    private javax.swing.JTextField dateOfBirthJTextField;
+    private javax.swing.JTextField firstNameJTextField;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
-    private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTextField productAvailabilityJTextField;
-    private javax.swing.JTextArea productDescriptionJTextArea;
-    private javax.swing.JTextField productNameJTextField;
-    private javax.swing.JTextField productPriceJTextField;
+    private javax.swing.JTextField lastNameJTextField;
+    private javax.swing.JButton okayJButton;
+    private javax.swing.JTextField socialSecurityNumberJTextField;
     // End of variables declaration//GEN-END:variables
 }
