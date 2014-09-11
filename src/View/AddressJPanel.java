@@ -7,6 +7,7 @@
 package View;
 
 import Model.Person;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -21,7 +22,7 @@ public class AddressJPanel extends javax.swing.JPanel {
     
     public AddressJPanel(Person person) {
         initComponents();
-        
+        this.person = person;
     }
 
     /**
@@ -46,7 +47,7 @@ public class AddressJPanel extends javax.swing.JPanel {
         countryJTextField = new javax.swing.JTextField();
         okayJButton = new javax.swing.JButton();
 
-        jLabel5.setText("View Product Screen");
+        jLabel5.setText("Address Detail");
 
         jLabel6.setText("Zip Code");
 
@@ -78,7 +79,7 @@ public class AddressJPanel extends javax.swing.JPanel {
             .addGroup(layout.createSequentialGroup()
                 .addGap(347, 347, 347)
                 .addComponent(jLabel5)
-                .addContainerGap(312, Short.MAX_VALUE))
+                .addContainerGap(346, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(okayJButton)
@@ -163,7 +164,7 @@ public class AddressJPanel extends javax.swing.JPanel {
         person.setAddressCountry(addressCountry);
         person.setAddressZipCode(Integer.parseInt(addressZipCode));
 
-        //JOptionPane.showMessageDialog(null, "Product Created Successfully" + product);
+        JOptionPane.showMessageDialog(null, "Address Created Successfully");
     }//GEN-LAST:event_okayJButtonActionPerformed
 
 

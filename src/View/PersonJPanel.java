@@ -45,7 +45,7 @@ public class PersonJPanel extends javax.swing.JPanel {
         dateOfBirthJTextField = new javax.swing.JTextField();
         socialSecurityNumberJTextField = new javax.swing.JTextField();
 
-        jLabel5.setText("Create Product Screen");
+        jLabel5.setText("Personal Information");
 
         okayJButton.setText("Okay");
         okayJButton.addActionListener(new java.awt.event.ActionListener() {
@@ -71,7 +71,7 @@ public class PersonJPanel extends javax.swing.JPanel {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel5)
                     .addComponent(okayJButton))
-                .addContainerGap(313, Short.MAX_VALUE))
+                .addContainerGap(319, Short.MAX_VALUE))
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(layout.createSequentialGroup()
                     .addGap(278, 278, 278)
@@ -138,7 +138,7 @@ public class PersonJPanel extends javax.swing.JPanel {
         person.setDateOfBirth(dateOfBirth);
         person.setSocialSecurityNumber(Integer.parseInt(socialSecurityNumber));
         
-        //JOptionPane.showMessageDialog(null, "Product Created Successfully" + product);
+        JOptionPane.showMessageDialog(null, "Person Created Successfully: " + person.getFirstName() + " " + person.getLastName());
     }//GEN-LAST:event_okayJButtonActionPerformed
 
 

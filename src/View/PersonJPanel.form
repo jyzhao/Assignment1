@@ -22,7 +22,7 @@
                   <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
                   <Component id="okayJButton" alignment="0" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace pref="313" max="32767" attributes="0"/>
+              <EmptySpace pref="319" max="32767" attributes="0"/>
           </Group>
           <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
               <Group type="102" attributes="0">
@@ -97,7 +97,7 @@
   <SubComponents>
     <Component class="javax.swing.JLabel" name="jLabel5">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Create Product Screen"/>
+        <Property name="text" type="java.lang.String" value="Personal Information"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="okayJButton">
