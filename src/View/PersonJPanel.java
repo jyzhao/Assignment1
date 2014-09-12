@@ -128,17 +128,22 @@ public class PersonJPanel extends javax.swing.JPanel {
 
     private void okayJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_okayJButtonActionPerformed
         // TODO add your handling code here:
-        String firstName = firstNameJTextField.getText();
-        String lastName = lastNameJTextField.getText();
-        String dateOfBirth = dateOfBirthJTextField.getText();
-        String socialSecurityNumber = socialSecurityNumberJTextField.getText();
+        if(firstNameJTextField.getText() != null && !firstNameJTextField.getText().equals("")) {
+            String firstName = firstNameJTextField.getText();
+            String lastName = lastNameJTextField.getText();
+            String dateOfBirth = dateOfBirthJTextField.getText();
+            String socialSecurityNumber = socialSecurityNumberJTextField.getText();
+
+            person.setFirstName(firstName);
+            person.setLastName(lastName);
+            person.setDateOfBirth(dateOfBirth);
+            person.setSocialSecurityNumber(Integer.parseInt(socialSecurityNumber));
+            
+            JOptionPane.showMessageDialog(null, "Person Created Successfully: " + person.getFirstName() + " " + person.getLastName());
+        }
         
-        person.setFirstName(firstName);
-        person.setLastName(lastName);
-        person.setDateOfBirth(dateOfBirth);
-        person.setSocialSecurityNumber(Integer.parseInt(socialSecurityNumber));
+
         
-        JOptionPane.showMessageDialog(null, "Person Created Successfully: " + person.getFirstName() + " " + person.getLastName());
     }//GEN-LAST:event_okayJButtonActionPerformed
 
 

@@ -152,19 +152,22 @@ public class AddressJPanel extends javax.swing.JPanel {
 
     private void okayJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_okayJButtonActionPerformed
         // TODO add your handling code here:
-        String addressStreetName = streetNameJTextField.getText();
-        String addressTownCity = townCityJTextField.getText();
-        String addressState = stateJTextField.getText();
-        String addressCountry = countryJTextField.getText();
-        String addressZipCode = zipCodeJTextField.getText();
-        
-        person.setAddressStreetName(addressStreetName);
-        person.setAddressTownCity(addressTownCity);
-        person.setAddressState(addressState);
-        person.setAddressCountry(addressCountry);
-        person.setAddressZipCode(Integer.parseInt(addressZipCode));
+        if(streetNameJTextField.getText() != null && !streetNameJTextField.getText().equals("")) {
+            String addressStreetName = streetNameJTextField.getText();
+            String addressTownCity = townCityJTextField.getText();
+            String addressState = stateJTextField.getText();
+            String addressCountry = countryJTextField.getText();
+            String addressZipCode = zipCodeJTextField.getText();
 
-        JOptionPane.showMessageDialog(null, "Address Created Successfully");
+            person.setAddressStreetName(addressStreetName);
+            person.setAddressTownCity(addressTownCity);
+            person.setAddressState(addressState);
+            person.setAddressCountry(addressCountry);
+            person.setAddressZipCode(Integer.parseInt(addressZipCode));
+
+            JOptionPane.showMessageDialog(null, "Address Created Successfully");
+        }
+        
     }//GEN-LAST:event_okayJButtonActionPerformed
 
 
